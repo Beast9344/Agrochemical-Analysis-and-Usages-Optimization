@@ -7,48 +7,65 @@ document.getElementById('logoutBtn').addEventListener('click', function() {
 });
 
   
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById('cropsForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      
+      const cropID = document.getElementById('cropID').value;
+      const cropName = document.getElementById('cropName').value;
+      // Prevent the form from submitting
+
+      // Perform any form validation here if needed
+
+      // Redirect back to the homeDashboard
+      window.location.href = "homeDashboard.html";
+  });
+});
+
+
+
+
+
+
   // Button click event listeners for other functionality
   document.getElementById('optimizationBtn').addEventListener('click', () => {
-    console.log('Optimization Strategies button clicked');
-    // Implement the logic for the Optimization Strategies button
+    window.location.href = "OptimizationStrategies.html";
   });
 
   document.getElementById('historicalDataBtn').addEventListener('click', () => {
-    console.log('Historical Data button clicked');
-    // Implement the logic for the Historical Data button
+    window.location.href = "HistoricalData.html";
   });
 
   document.getElementById('soilDataBtn').addEventListener('click', () => {
-    console.log('Soil Data button clicked');
-    // Implement the logic for the Soil Data button
+    window.location.href = "SoilData.html";
   });
 
   document.getElementById('weatherDataBtn').addEventListener('click', () => {
-    console.log('Weather Data button clicked');
-    // Implement the logic for the Weather Data button
+    window.location.href = "WeatherData.html";
   });
-
-  document.getElementById('locationsBtn').addEventListener('click', () => {
-    console.log('Locations button clicked');
-    // Implement the logic for the Locations button
+   document.getElementById('locationsBtn').addEventListener('click', () => {
+    window.location.href = "Locations.html";
   });
 
   document.getElementById('environmentalImpactsBtn').addEventListener('click', () => {
-    console.log('Environmental Impacts button clicked');
-    // Implement the logic for the Environmental Impacts button
+    window.location.href = "EnvironmentalImpacts.html";
   });
 
-  document.getElementById('agrichemicalsBtn').addEventListener('click', () => {
-    console.log('Agrochemicals button clicked');
-    // Implement the logic for the Agrochemicals button
+  document.getElementById('agrochemicalsBtn').addEventListener('click', () => {
+    window.location.href = "Agrochemicals.html";
   });
 
-  document.getElementById('cropsBtn').addEventListener('click', () => {
-    console.log('Crops button clicked');
-    // Implement the logic for the Crops button
-  });
+
 
   document.getElementById('usersBtn').addEventListener('click', () => {
-    console.log('Users button clicked');
-    alert('Users button clicked!');
+    window.location.href = "users.html";
+  });
+
+
+
+document.getElementById('cropsBtn').addEventListener('click', function() {
+  // Redirect to the Crops form page
+  window.location.href = "crops.html";
 });
+
