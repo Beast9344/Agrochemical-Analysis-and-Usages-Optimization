@@ -5,7 +5,6 @@ document.getElementById('logoutBtn').addEventListener('click', function() {
   // For demonstration purposes, let's redirect to the login page
   window.location.href = 'Loginpage.html';
 });
-
   
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -22,10 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = "homeDashboard.html";
   });
 });
-
-
-
-
 
 
   // Button click event listeners for other functionality
@@ -57,11 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-
   document.getElementById('usersBtn').addEventListener('click', () => {
     window.location.href = "users.html";
   });
-
 
 
 document.getElementById('cropsBtn').addEventListener('click', function() {
