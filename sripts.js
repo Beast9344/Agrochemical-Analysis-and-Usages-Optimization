@@ -2,7 +2,6 @@
 const signupButton = document.getElementById('signup-button');
 const loginButton = document.getElementById('login-button');
 const userForms = document.getElementById('user_options-forms');
-
 /** * Add event listener to the "Sign Up" button */
 signupButton.addEventListener('click', () => {
   userForms.classList.remove('bounceRight');
@@ -56,6 +55,7 @@ function signup(event) {
     alert("Signup successful for Rafiq!");
 
     // Redirect to homeDashboard.html after successful signup
+
     window.location.href = "homeDashboard.html"; // Change to the path of your home dashboard page
   } else {
     // Alert for invalid signup attempt

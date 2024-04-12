@@ -1,3 +1,4 @@
+
 document.getElementById('logoutBtn').addEventListener('click', function() {
   // Here you can implement the logic to logout the user
   // For example, you might want to clear any stored authentication tokens, redirect to the login page, etc.
@@ -5,8 +6,6 @@ document.getElementById('logoutBtn').addEventListener('click', function() {
   // For demonstration purposes, let's redirect to the login page
   window.location.href = 'Loginpage.html';
 });
-
-  
 
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById('cropsForm').addEventListener('submit', function(event) {
@@ -22,11 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = "homeDashboard.html";
   });
 });
-
-
-
-
-
 
   // Button click event listeners for other functionality
   document.getElementById('optimizationBtn').addEventListener('click', () => {
@@ -57,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-
   document.getElementById('usersBtn').addEventListener('click', () => {
     window.location.href = "users.html";
   });
@@ -68,4 +61,5 @@ document.getElementById('cropsBtn').addEventListener('click', function() {
   // Redirect to the Crops form page
   window.location.href = "crops.html";
 });
+
 
